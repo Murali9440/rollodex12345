@@ -1,5 +1,6 @@
 import Card from '../Card/Card.component'
 import './Card-List.styles.css'
+import { Col } from 'react-bootstrap'
 
 const CardList = (props)  => {
     
@@ -9,7 +10,9 @@ const CardList = (props)  => {
             {
                 monsters.map(
                     (monster,index) => (
-                        <Card key={index} monster={monster} />
+                        // < Col xs = {12} sm = {12} md={6} lg = {3} xlg = {2}> 
+                          <Card key={index} monster={monster} />
+                        // </Col>
                     )
                 )
             }
